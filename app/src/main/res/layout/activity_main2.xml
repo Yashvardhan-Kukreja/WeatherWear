@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.yash1300.weatherwear.Main2Activity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:id="@+id/ll">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="35sp"
+           android:id="@+id/toplace"
+           android:layout_marginStart="15dp"
+           android:text=""
+           android:layout_marginTop="29dp"
+           android:textColor="#ffffff"/>
+    <TextView
+        android:id="@+id/todate"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginStart="15dp" />
+
+       <TextView
+           android:id="@+id/today"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:paddingBottom="5dp"
+           android:textColor="#ffffff"
+           android:textSize="30sp"
+           android:layout_marginStart="15dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/toHighT"
+           android:text=""
+           android:textColor="#ffffff"
+           android:textSize="20sp"
+           android:paddingTop="5dp"
+           android:layout_marginStart="15dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/toLowT"
+           android:text=""
+           android:textColor="#ffffff"
+           android:paddingTop="5dp"
+           android:textSize="20sp"
+           android:paddingBottom="5dp"
+           android:layout_marginStart="15dp"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:paddingTop="5dp"
+           android:id="@+id/toTextT"
+           android:textColor="#ffffff"
+           android:textSize="30sp"
+           android:layout_marginStart="15dp"/>
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textSize="0sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/ll"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="0dp"
+        android:text="" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff9f9f9"
+        android:layout_below="@+id/textView2"
+        android:id="@+id/weatherRecycler"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp"/>
+</RelativeLayout>

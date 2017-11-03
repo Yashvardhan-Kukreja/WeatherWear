@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.yash1300.weatherwear.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/d"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:id="@+id/imageView" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textInputLayout3">
+        <EditText
+            android:layout_width="250dp"
+            android:id="@+id/city"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:layout_height="wrap_content"
+            android:hint="Enter the city"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="wrap_content"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textInputLayout3"
+        android:layout_alignStart="@+id/textInputLayout3"
+        android:id="@+id/textInputLayout4">
+        <EditText
+            android:layout_width="250dp"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:id="@+id/state"
+            android:layout_height="wrap_content"
+            android:hint="Enter the state or country"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textColor="#ffffff"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/textInputLayout4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/proceed"
+        android:layout_marginTop="40dp" />
+
+
+
+</RelativeLayout>
